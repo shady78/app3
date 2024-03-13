@@ -1,0 +1,106 @@
+/* start global Rules */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: var(--main-duration);
+  }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior:smooth ;
+  }
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.parent {
+    background-color: #eee;
+
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* small  */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container {
+        width:  1170px;
+    }
+}
+/* End global Rules */
+/* start component */
+.special-heading{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight:800 ;
+    margin: 0;
+    letter-spacing:-3px;
+}
+.special-heading + p{
+    margin: -30px 0 0;
+    font-size:20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width:767px){
+    .special-heading{
+        font-size: 60px;
+    }
+    .special-heading + p{
+        margin-top:-20px;
+    }
+}
+/* End component */
+
+/* Start Landing */
+.landing{
+    background-image: url(../../assets/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size:50px;
+    color: #10cab7;
+
+}
+.landing .intro-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    width: 320px;
+    max-width: 100%;
+}
+.landing .intro-text p{
+line-height: 1.8;
+font-size: 19px;
+}
+/* End Landing */
